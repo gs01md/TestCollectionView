@@ -12,6 +12,7 @@
 @interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
 
 @end
 
@@ -24,6 +25,7 @@
     
     self.collectionView.dataSource = self;
     self.collectionView.delegate   = self;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,5 +43,11 @@
     
     return cell;
 }
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat width = ([[UIScreen mainScreen] bounds].size.width - self.flowLayout.minimumInteritemSpacing)/2;
+    return CGSizeMake(width, 100);
+}
+
 
 @end
