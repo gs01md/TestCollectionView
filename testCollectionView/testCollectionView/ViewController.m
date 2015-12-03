@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MyImageCell.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -16,12 +19,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"MyImageCell" bundle:nil] forCellWithReuseIdentifier:@"MyImageCell"];
+    
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate   = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 5;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    MyImageCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"MyImageCell" forIndexPath:indexPath];
+    cell.image.image = [UIImage imageNamed:@"3.png"];
+    
+    return cell;
 }
 
 @end
