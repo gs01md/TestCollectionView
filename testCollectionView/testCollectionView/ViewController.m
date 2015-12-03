@@ -46,7 +46,24 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat width = ([[UIScreen mainScreen] bounds].size.width - self.flowLayout.minimumInteritemSpacing)/2;
-    return CGSizeMake(width, 100);
+    CGFloat height = 100;
+    switch (indexPath.row) {
+        case 0:
+            height = 140;
+            break;
+        case 1:
+            height = 240;
+            break;
+        case 2:
+            height = 150;
+            break;
+        case 3:
+            height = 120;
+            break;
+        default:
+            break;
+    }
+    return CGSizeMake(width, height);
 }
 
 
