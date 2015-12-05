@@ -15,7 +15,7 @@
 		6E493C761C0F024600D70BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E493C741C0F024600D70BDE /* LaunchScreen.storyboard */; };
 		6EC366AB1C10475400F6B572 /* MyImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC366A91C10475400F6B572 /* MyImageCell.m */; };
 		6EC366AC1C10475400F6B572 /* MyImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC366AA1C10475400F6B572 /* MyImageCell.xib */; };
-		6EC366AE1C1049C700F6B572 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC366AD1C1049C700F6B572 /* 3.png */; };
+		6EC366B71C11C89D00F6B572 /* WaterFallFlowLayoutGS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC366B61C11C89D00F6B572 /* WaterFallFlowLayoutGS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,8 @@
 		6EC366A81C10475400F6B572 /* MyImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageCell.h; sourceTree = "<group>"; };
 		6EC366A91C10475400F6B572 /* MyImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageCell.m; sourceTree = "<group>"; };
 		6EC366AA1C10475400F6B572 /* MyImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyImageCell.xib; sourceTree = "<group>"; };
-		6EC366AD1C1049C700F6B572 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		6EC366B51C11C89D00F6B572 /* WaterFallFlowLayoutGS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallFlowLayoutGS.h; sourceTree = "<group>"; };
+		6EC366B61C11C89D00F6B572 /* WaterFallFlowLayoutGS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallFlowLayoutGS.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +66,6 @@
 		6E493C651C0F024600D70BDE /* testCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				6EC366AD1C1049C700F6B572 /* 3.png */,
 				6E493C691C0F024600D70BDE /* AppDelegate.h */,
 				6E493C6A1C0F024600D70BDE /* AppDelegate.m */,
 				6E493C6C1C0F024600D70BDE /* ViewController.h */,
@@ -78,6 +78,8 @@
 				6EC366A81C10475400F6B572 /* MyImageCell.h */,
 				6EC366A91C10475400F6B572 /* MyImageCell.m */,
 				6EC366AA1C10475400F6B572 /* MyImageCell.xib */,
+				6EC366B51C11C89D00F6B572 /* WaterFallFlowLayoutGS.h */,
+				6EC366B61C11C89D00F6B572 /* WaterFallFlowLayoutGS.m */,
 			);
 			path = testCollectionView;
 			sourceTree = "<group>";
@@ -147,7 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC366AE1C1049C700F6B572 /* 3.png in Resources */,
 				6E493C761C0F024600D70BDE /* LaunchScreen.storyboard in Resources */,
 				6EC366AC1C10475400F6B572 /* MyImageCell.xib in Resources */,
 				6E493C731C0F024600D70BDE /* Assets.xcassets in Resources */,
@@ -162,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC366B71C11C89D00F6B572 /* WaterFallFlowLayoutGS.m in Sources */,
 				6E493C6E1C0F024600D70BDE /* ViewController.m in Sources */,
 				6EC366AB1C10475400F6B572 /* MyImageCell.m in Sources */,
 				6E493C6B1C0F024600D70BDE /* AppDelegate.m in Sources */,

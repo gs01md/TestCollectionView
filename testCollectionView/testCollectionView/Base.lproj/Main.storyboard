@@ -42,7 +42,6 @@
                     <navigationItem key="navigationItem" title="浏览照片" id="fPc-rp-Clj"/>
                     <connections>
                         <outlet property="collectionView" destination="mnk-fb-k2L" id="ViO-yg-hnl"/>
-                        <outlet property="flowLayout" destination="Lh7-fC-CKN" id="s8I-6U-T86"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
